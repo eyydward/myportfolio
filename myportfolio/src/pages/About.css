@@ -1,0 +1,39 @@
+/* Styles for About page */
+.page-section.about .section-inner {
+  padding: 40px 20px;
+  max-width: 1000px;
+}
+
+.page-section.about h1 { font-size: 40px; color: #05394a; margin-bottom: 8px; }
+.page-section.about .lead { color: #0a6c84; font-size: 18px; margin-bottom: 24px; }
+
+.about-content { display: flex; flex-direction: column; gap: 28px; }
+
+.about-bio { text-align: left; }
+.about-bio p { color: #084a5c; line-height: 1.6; margin: 12px 0; }
+
+.skills-section h2 { font-size: 28px; color: #05394a; margin-bottom: 16px; text-align: left; }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  padding: 18px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(110,231,183,0.03), rgba(59,130,246,0.03));
+  border: 1px solid rgba(6,59,87,0.06);
+  text-align: center;
+  transition: transform 120ms, box-shadow 120ms;
+}
+
+.skill-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(59,130,246,0.08);
+}
+
+.skill-icon { font-size: 32px; margin-bottom: 8px; }
+.skill-card h3 { font-size: 16px; color: #05394a; margin: 8px 0; }
+.skill-card p { font-size: 13px; color: #0a6a82; margin: 0; }

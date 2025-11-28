@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+/* Page sections for the single-page scroll layout */
+.page-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 20px;
+  box-sizing: border-box;
+  color: #04263b;
+}
+
+.page-section .section-inner { max-width: 900px; text-align: center; }
+.page-section h1 { margin: 0 0 8px; font-size: 36px; }
+.page-section .lead { margin: 0 0 12px; color: #0b576f; }
+
+.page-section.home { background: #ffffff; }
+.page-section.about { background: #f7fbff; }
+.page-section.projects { background: #ffffff; }
+.page-section.contact { background: #f5fbf9; }
+
+/* Smooth scrolling when clicking nav anchors */
+html { scroll-behavior: smooth; }

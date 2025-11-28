@@ -1,0 +1,32 @@
+/* Styles for Projects page */
+.page-section.projects .section-inner { padding: 40px 20px; max-width: 1000px; }
+.page-section.projects h1 { font-size: 40px; color: #05394a; margin-bottom: 8px; }
+.page-section.projects .lead { color: #0a6c84; font-size: 18px; margin-bottom: 24px; }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(110,231,183,0.03), rgba(59,130,246,0.03));
+  border: 1px solid rgba(6,59,87,0.06);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 120ms, box-shadow 120ms, border-color 120ms;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(59,130,246,0.12);
+  border-color: rgba(59,130,246,0.12);
+}
+
+.project-card h3 { font-size: 18px; color: #05394a; margin: 0 0 8px; }
+.project-card p { font-size: 14px; color: #084a5c; margin: 0 0 12px; line-height: 1.5; }
+
+.project-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { font-size: 12px; padding: 4px 8px; background: rgba(59,130,246,0.08); color: #0a6a82; border-radius: 6px; }
